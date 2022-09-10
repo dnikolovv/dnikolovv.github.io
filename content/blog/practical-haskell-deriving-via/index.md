@@ -1,7 +1,7 @@
 ---
 title: "Using `DerivingVia` to magically derive instances"
 date: "2022-09-10T09:52:55.684205549Z"
-description: "Elegant instance deriving using DerivingVia."
+description: "Reduce boilerplate and add a touch of elegance using DerivingVia."
 ---
 
 > This short post is part of the [Practical Haskell Bits initiative](/practical-haskell-bits-initiative/). Visit the [repository](https://github.com/dnikolovv/practical-haskell) to find out more real-world examples like this.
