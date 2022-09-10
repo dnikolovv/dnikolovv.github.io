@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Dobri's thoughts`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Dobromir Nikolov`,
+      summary: `who's still wondering why people pay him to make software.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `The blog of a Haskeller.`,
+    siteUrl: `https://dnikolovv.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: 'dnikolovv'
     },
   },
   plugins: [
@@ -99,7 +99,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Dobri's thoughts RSS Feed",
           },
         ],
       },

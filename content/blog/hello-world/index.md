@@ -1,231 +1,79 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: "The \"Practical Haskell Bits\" initiative"
+date: "2022-09-10"
+description: "An attempt to collect and organize various real world Haskell patterns, snippets and popular library examples."
 ---
 
-This is my first post on my new fake blog! How exciting!
+It happens to all of us.
 
-I'm sure I'll write a lot more interesting things in the future.
+Once in a while you stumble upon a problem that seems way too familiar. You remember that you've either solved it before or saw it in a blog post somewhere.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+You start browsing through Reddit, old projects and bookmarks, searching aggressively for that single line of code or function that you just need to copy-paste or at least take a glimpse at to remember what it was about. It's just one "bit" that you need.
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+Practical Haskell Bits is an initiative to contain as many of these as possible and become the go-to place for real-world patterns, snippets and popular library examples.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+Bits should be aimed towards **everyone** in the community, regardless of their level of experience or understanding.
 
-You can also write code blocks here!
+> No example is too trivial!
 
-```js
-const saltyDuckEgg = "chinese preserved food product"
-```
+The Haskell community is often criticized for focusing on things that are way too complicated to outsiders (and frankly, most "intermediate" Haskellers as well) and pushing away beginners. This is true and in order to attract more people and have them become productive, we need to address it.
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
+Not everyone can figure out how to use a library by reading the source code.
 
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
+Some people will struggle with "basic" things such as parsing JSON or setting up a web server. It's exactly these people that will not have the confidence to ask a question because seemingly everyone is busy looking at [`examples of compiler optimizations changing asymptotic complexity`](https://www.reddit.com/r/haskell/comments/xah8v1/examples_of_compiler_optimizations_changing/).
 
-This is a paragraph.
+# What defines a Practical Haskell Bit?
 
-    This is a paragraph.
+#### A Practical Haskell Bit is a **mini-project** that:
 
-# Header 1
 
-## Header 2
+* Looks at a single, well-defined scenario
+* Is of production quality
+* Contains as little code and dependencies as possible
+* Is self-contained and buildable on its own
+* Reflects the current (or at least some) best practices
+* Is suitable for copy-pasting or just refreshing your memory
+* Has a sufficient, but not necessarily detailed explanation
+* Aims to use terminology and examples as close to the real world as possible
 
-    Header 1
-    ========
+#### A Practical Haskell Bit is **not**:
 
-    Header 2
-    --------
+* [Necessarily] a detailed tutorial
+* An incomplete code snippet
+* A full blown project example (e.g. [realworld.io](realworld.io))
+* A blog post that you need to follow to put the code together
 
-# Header 1
+# Examples and non-examples:
 
-## Header 2
+#### Good Practical Haskell Bit candidates:
 
-### Header 3
+* Streaming `persistent` queries using `conduit`
+* Integrating with an external API via `servant-client`
+* Making your `wai` app AWS Lambda compatible
+* Setting up your application monad and business logic with `mtl`
+* Protecting `servant` routes with a JWT token
+* Using smart constructors
+* Record update scenarios via `lens`
+* Logging to multiple destinations (e.g. file + stdout) via `katip`
+* Property testing with `QuickCheck`
+* etc.
 
-#### Header 4
+#### Bad Practical Haskell Bit candidates:
 
-##### Header 5
+* A CRUD app
+* A console game
+* A snippet containing some part of a solution
+* A snippet without sufficient context
+* etc.
 
-###### Header 6
+#### Reasoning
 
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
+Having isolated and focused examples makes them a lot easier to search, develop and maintain. Full blown projects can quickly grow to gigantic proportions and make it confusing what the whole thing is about.
 
-# Header 1
+While some of the aforementioned points might seem "too simple", this will not be the case for everyone. It's easy to remember how hard and confusing the Haskell space can be in the early days, especially with there usually being multiple "correct" ways of reaching the same destination.
 
-## Header 2
+#### Contributing
 
-### Header 3
+I have set up a repository at [dnikolovv/practical-haskell](https://github.com/dnikolovv/practical-haskell) and added a couple of bits, with more coming in the following days.
 
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
-
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> ## This is a header.
->
-> 1. This is the first list item.
-> 2. This is the second list item.
->
-> Here's some example code:
->
->     Markdown.generate();
-
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
-
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-
-```markdown
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-```
-
-- `code goes` here in this line
-- **bold** goes here
-
-```markdown
-- `code goes` here in this line
-- **bold** goes here
-```
-
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-
-```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-```
-
-1. `code goes` here in this line
-1. **bold** goes here
-
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
-```
-
-Paragraph:
-
-    Code
-
-<!-- -->
-
-    Paragraph:
-
-        Code
-
----
-
----
-
----
-
----
-
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+It would be great if you can provide feedback or submit your own examples. The hope is that eventually this initiative can grow into its own organization and become a cherished resource in the Haskell space.
