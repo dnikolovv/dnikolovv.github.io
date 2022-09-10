@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Dobri's thoughts`,
+    title: `Crossing the river by touching the stones`,
     author: {
       name: `Dobromir Nikolov`,
       summary: `who's still wondering why people pay him to make software.`,
@@ -99,7 +99,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Dobri's thoughts RSS Feed",
+            title: "Intrusive thoughts RSS Feed",
           },
         ],
       },
