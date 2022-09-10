@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Crossing the river by touching the stones`,
+    title: `Crossing the river by feeling the stones`,
     author: {
       name: `Dobromir Nikolov`,
       summary: `who's still wondering why people pay him to make software.`,
