@@ -66,13 +66,21 @@ Some people will struggle with "basic" things such as parsing JSON or setting up
 * A snippet without sufficient context
 * etc.
 
-#### Reasoning
+# Reasoning
 
 Having isolated and focused examples makes them a lot easier to search, develop and maintain. Full blown projects can quickly grow to gigantic proportions and make it confusing what the whole thing is about.
 
 While some of the aforementioned points might seem "too simple", this will not be the case for everyone. It's easy to remember how hard and confusing the Haskell space can be in the early days, especially with there usually being multiple "correct" ways of reaching the same destination.
 
-#### Contributing
+#### Don't we already have a ton of blog posts?
+
+The Haskell space has been blessed with some pretty intelligent people and we're lucky to have many of them share their thoughts and research via blog posts.
+
+While this is undisputably great, often times the level of abstraction is just too far from the "real world" for most people.
+
+As an example, contrast the practical `DerivingVia` trick that I've shown [here](/practical-haskell-deriving-via) that uses concepts familiar to everyone such as calling an external API, versus the [documentation](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/deriving_via.html) that talks about Kleisli arrows, `Applicative` and `Semigroup`.
+
+# Contributing
 
 I have set up a repository at [dnikolovv/practical-haskell](https://github.com/dnikolovv/practical-haskell) and added a couple of bits, with more coming in the following days.
 
