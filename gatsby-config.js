@@ -3,7 +3,7 @@ module.exports = {
     title: `Crossing the river by feeling the stones`,
     author: {
       name: `Dobromir Nikolov`,
-      summary: `who's still wondering why people pay him to make software.`,
+      summary: `, who's still wondering why people pay him to make software.`,
     },
     description: `The blog of a Haskeller.`,
     siteUrl: `https://dnikolovv.github.io/`,
