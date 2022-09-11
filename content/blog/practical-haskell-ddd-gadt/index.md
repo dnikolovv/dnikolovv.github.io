@@ -1,6 +1,6 @@
 ---
 title: "Domain Driven Design using GADTs"
-date: "2022-09-11T09:52:55.684205549Z"
+date: "2022-09-12T09:52:55.684205549Z"
 description: "One way of making illegal states unrepresentable."
 ---
 
