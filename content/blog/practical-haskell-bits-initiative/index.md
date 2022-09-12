@@ -4,6 +4,8 @@ date: "2022-09-10"
 description: "An attempt to collect and organize various real world Haskell patterns, snippets and popular library examples."
 ---
 
+> Go [straight to the repository](https://github.com/dnikolovv/practical-haskell)
+
 It happens to all of us.
 
 Once in a while you stumble upon a problem that seems way too familiar. You remember that you've either solved it before or saw it in a blog post somewhere.
