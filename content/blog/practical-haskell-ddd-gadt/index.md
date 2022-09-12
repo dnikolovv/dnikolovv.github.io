@@ -79,7 +79,9 @@ refundOrder :: Order 'PaidFor -> m ()
 refundOrder = ...
 
 -- Or we can just ignore the type if we don't care about it
-getAllOrders :: m [Order status]
+data SomeOrder = forall status. SomeOrder (Order status)
+
+getAllOrders :: m [SomeOrder]
 getAllOrders = ...
 ```
 
