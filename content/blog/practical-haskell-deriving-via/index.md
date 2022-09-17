@@ -1,5 +1,5 @@
 ---
-title: "Using `DerivingVia` to magically derive instances"
+title: "Using DerivingVia to magically derive instances"
 date: "2022-09-10T09:52:55.684205549Z"
 description: "Reduce boilerplate and add a touch of elegance using DerivingVia."
 ---
@@ -113,5 +113,21 @@ demo = do
 ```
 
 You can find the complete example [here](https://github.com/dnikolovv/practical-haskell/tree/main/deriving-via/src).
+
+> **Update:**
+>
+> Some people argued that this is not a good example of `DerivingVia` as it barely saves you any code when you just have two monads.
+>
+> I actually agree with that - the example itself is way too trivial to justify the abstraction.
+>
+> In our production codebase, however, we have many packages and many typeclasses. Every package defines its own monad and uses `DerivingVia` to acquire instances of said typeclasses.
+>
+> If we didn't use this technique, every change in the interface would cause changes in all dependent packages.
+>
+> With `DerivingVia`, we save on a lot of boilerplate, and the added benefit is that the most frequent implementation of a typeclass is contained close to its definition.
+> 
+> Still, there are certainly more useful things you can do with `DerivingVia`, and I'm exploring these in the [following post](/practical-haskell-more-deriving-via).
+
+---
 
 > This short post is part of the [Practical Haskell Bits initiative](/practical-haskell-bits-initiative/). Visit the [repository](https://github.com/dnikolovv/practical-haskell) to find out more real-world examples like this.
